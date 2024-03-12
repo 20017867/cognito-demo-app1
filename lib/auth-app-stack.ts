@@ -46,6 +46,14 @@ export class AuthAppStack extends cdk.Stack {
      'signup.ts'
    );
 
+    // NEW - Confirm SignUP
+    this.addAuthRoute(
+      "confirm_signup",
+      "POST",
+      "ConfirmFn",
+      "confirm-signup.ts"
+    );
+
  } // End constructor
 
   //Cognito Authentication
